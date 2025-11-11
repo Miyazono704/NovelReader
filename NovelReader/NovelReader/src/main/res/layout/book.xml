@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".date.DetailBook">
+
+
+    <TextView
+        android:id="@+id/bookview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内容"
+        android:background="@color/bg_green"
+        android:textSize="20dp"
+        android:scrollbars="vertical"
+        android:layout_above="@id/rg_tab_bar"/>
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/shang"
+            style="@style/tab_menu_item"
+            android:text="上一章" />
+
+        <RadioButton
+            android:id="@+id/menu"
+            style="@style/tab_menu_item"
+            android:text="目录" />
+
+        <RadioButton
+            android:id="@+id/next"
+            style="@style/tab_menu_item"
+            android:text="下一章" />
+
+
+    </RadioGroup>
+
+</RelativeLayout>

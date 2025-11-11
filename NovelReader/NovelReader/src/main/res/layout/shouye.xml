@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#E6E8EA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/round" >
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/search"/>
+    <EditText
+        android:id="@+id/edinput"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+        android:inputType="text"
+        android:lines="1"
+    android:layout_marginLeft="43dp"
+    android:layout_marginRight="55dp"
+    android:background="#FCFDFD"
+    android:hint="请输入搜索内容" />
+        <TextView
+            android:id="@+id/tv_refresh1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="搜索"
+        android:textColor="#A60F43"
+        android:textSize="17dp" />
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="排行榜"
+        android:textSize="35dp"
+        android:padding="6dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/all_rank"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="完整榜单"
+    android:textSize="20dp"
+        android:padding="5dp"
+    android:layout_alignParentRight="true"
+    />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/homeRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorContent"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </HorizontalScrollView>
+
+</LinearLayout>
