@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.NovelReader">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许读取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="com.example.NovelReader.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="小说阅读APP"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NovelReader"
+        tools:targetApi="31">
+
+        <activity
+            android:name="com.example.NovelReader.denglu.update_test"
+            android:exported="false" />
+        <activity
+            android:name="com.example.NovelReader.denglu.register"
+            android:exported="false" />
+        <activity
+            android:name="com.example.NovelReader.denglu.good"
+            android:exported="false" />
+        <activity
+            android:name="com.example.NovelReader.wode.MyFragment4"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name="com.example.NovelReader.date.DetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="WrongManifestParent" />
+        <activity
+            android:name="com.example.NovelReader.date.DetailBook"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            tools:ignore="WrongManifestParent" />
+        <activity
+            android:name="com.example.NovelReader.denglu.WelcomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.NovelReader.denglu.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:exported="true"
+            android:label="阅读APP"
+            android:launchMode="singleTask" />
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".denglu.register"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/a1"/>
+
+        <EditText
+            android:drawableLeft="@drawable/user"
+            android:paddingLeft="15dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:hint="请输入用户名或手机号码"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:id="@+id/etname"/>
+
+        <EditText
+            android:drawableLeft="@drawable/password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:hint="请输入密码"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:id="@+id/edpassword1"/>
+
+<!--半圆角代码美观-->
+    <Button
+        android:id="@+id/register1"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:background="@drawable/button_rounded"
+        android:onClick="zhuche"
+        android:text="注册"
+        android:textSize="20dp"
+         />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:layout_gravity="right"
+        android:text="已有账户？返回登录"
+        android:textColor="@color/purple_700" />
+
+</LinearLayout>

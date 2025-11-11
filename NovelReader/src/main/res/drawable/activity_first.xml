@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/a1"/>
+
+    <EditText
+        android:id="@+id/zh"
+        android:drawableLeft="@drawable/user"
+        android:paddingLeft="15dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:hint="微信号或手机号码"
+        android:layout_width="350dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/mm"
+        android:drawableLeft="@drawable/password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="输入密码"
+        android:layout_width="350dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:text="登录"
+        android:background="#69E669"
+        android:alpha="0.8"
+        android:layout_width="350dp"
+        android:layout_height="50dp"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="35dp"
+        android:textColor="@color/purple_700"
+        android:text="忘记密码？"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="200dp"
+        android:textColor="@color/purple_700"
+        android:text="新用户注册"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

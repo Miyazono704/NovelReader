@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".denglu.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myUserHead"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/a1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingClass" />
+
+
+        <EditText
+            android:drawableLeft="@drawable/user"
+            android:paddingLeft="15dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:hint="用户名或手机号码"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:id="@+id/edname"/>
+
+
+        <EditText
+            android:drawableLeft="@drawable/password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:hint="输入密码"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:id="@+id/edpassword"/>
+
+    <Button
+        android:textColor="@color/white"
+        android:text="登录"
+        android:textStyle="bold"
+       android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_rounded"
+        android:alpha="0.75"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:id="@+id/login"
+        />
+
+    <Button
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="注册"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_rounded"
+        android:alpha="0.75"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:id="@+id/register"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:text="忘记密码？"
+            android:textColor="@color/purple_700" />
+
+        <TextView
+            android:id="@+id/update2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="35dp"
+            android:layout_alignParentRight="true"
+            android:text="修改密码"
+            android:textColor="@color/purple_700" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:text="注销"
+        android:textColor="@color/purple_700"
+        android:textSize="18dp" />
+
+
+</LinearLayout>
