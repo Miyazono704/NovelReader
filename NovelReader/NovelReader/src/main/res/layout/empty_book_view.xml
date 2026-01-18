@@ -15,17 +15,16 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_weight="1"
-            android:paddingStart="8sp"
-            android:gravity="center_vertical"
-            android:text="当前书架空空如也"
-            android:textSize="18sp"
-            android:textColor="#1418C6"
-            tools:ignore="RtlSymmetry"/>
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:paddingStart="8sp"
+                android:gravity="center_vertical"
+                android:text="当前书架空空如也"
+                android:textSize="18sp"
+                android:textColor="#1418C6"
+                tools:ignore="RtlSymmetry" tools:visibility="visible"/>
 
     </LinearLayout>
 
