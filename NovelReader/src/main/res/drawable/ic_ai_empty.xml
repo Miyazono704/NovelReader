@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    
+    <!-- 背景圆 -->
+    <path
+        android:fillColor="#F5F5F5"
+        android:pathData="M60,60m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0"/>
+    
+    <!-- 机器人头部 -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M40,35 L80,35 Q85,35 85,40 L85,65 Q85,70 80,70 L40,70 Q35,70 35,65 L35,40 Q35,35 40,35"/>
+    
+    <!-- 眼睛 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,48m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M72,48m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"/>
+    
+    <!-- 瞳孔 -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M48,48m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    <path
+        android:fillColor="#333333"
+        android:pathData="M72,48m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    
+    <!-- 嘴巴 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,58 Q60,65 70,58"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"/>
+    
+    <!-- 天线 -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M60,35 L60,25"/>
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M60,25m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"/>
+    
+    <!-- 身体 -->
+    <path
+        android:fillColor="#FFB088"
+        android:pathData="M45,75 L75,75 L75,95 L45,95 Z"/>
+    
+    <!-- 书本 -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M78,80 L98,80 L98,100 L78,100 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M82,85 L94,85 M82,90 L94,90 M82,95 L90,95"
+        android:strokeWidth="1"
+        android:strokeColor="#FFFFFF"/>
+</vector>
