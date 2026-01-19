@@ -4,7 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_bookshelf"
+            android:scaleType="centerCrop"
+            android:alpha="1" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,16 +22,25 @@
 
         <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="35dp"
+                android:layout_height="75dp"
                 android:layout_weight="1"
                 android:paddingStart="8sp"
                 android:gravity="center_vertical"
-                android:text="当前书架空空如也"
+                android:lines="2" android:text="当前书架空空如也\n快去书城看看吧"
                 android:textSize="18sp"
-                android:textColor="@color/cardview_dark_background"
-                tools:ignore="RtlSymmetry" tools:visibility="visible"/>
+                android:textColor="#AAB2BD"
+                tools:ignore="RtlSymmetry"
+        />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+        </LinearLayout>
+
 
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

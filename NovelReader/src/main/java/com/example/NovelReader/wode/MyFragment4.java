@@ -25,6 +25,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.NovelReader.HttpUtils;
+import com.example.NovelReader.ai.AIRecommendActivity;
 import com.example.NovelReader.denglu.MainActivity;
 import com.example.NovelReader.MyBRReceiver;
 import com.example.NovelReader.R;
@@ -160,6 +161,12 @@ public class MyFragment4 extends Fragment {
     void click5(){
         bg.setBackground(this.getResources().getDrawable(R.color.bg_green));
         Tips.show("护眼模式，启动！");
+    }
+    //AI智能推荐
+    @OnClick(R.id.aiRecommend)
+    void clickAIRecommend(){
+        Intent intent = new Intent(getContext(), AIRecommendActivity.class);
+        startActivity(intent);
     }
     //修改地址
     @OnClick(R.id.myModifyText)

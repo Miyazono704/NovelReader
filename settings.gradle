@@ -16,6 +16,9 @@ pluginManagement {
         maven { url 'https://jitpack.io' }// 引入BaseRecyclerViewAdapterHelper库
     }
 }
+plugins {
+    id 'com.android.application' version '7.3.0' apply false
+}
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {

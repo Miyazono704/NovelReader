@@ -56,6 +56,10 @@
             android:exported="true"
             android:label="阅读APP"
             android:launchMode="singleTask" />
+        <activity
+            android:name="com.example.NovelReader.ai.AIRecommendActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

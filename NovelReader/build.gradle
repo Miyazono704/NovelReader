@@ -4,6 +4,7 @@ plugins {
 
 android {
     compileSdk 32
+    namespace 'com.example.NovelReader'
 
     defaultConfig {
         applicationId "com.example.NovelReader"

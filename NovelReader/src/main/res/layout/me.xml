@@ -215,6 +215,22 @@
                     android:layout_height="1dp"
                     android:background="#EEEEEE" />
 
+                <TextView
+                        android:id="@+id/aiRecommend"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16dp"
+                        android:text="AI智能推荐"
+                        android:textSize="18sp"
+                        tools:ignore="RtlSymmetry" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EEEEEE" />
+
 
                 <TextView
                     android:id="@+id/myModifyText"
